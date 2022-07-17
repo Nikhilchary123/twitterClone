@@ -1,0 +1,71 @@
+POST http://localhost:3000/register
+Content-Type:application/json
+
+{
+    "username":"Nikhil123",
+    "password":"nikhil123",
+    "name":"Nikhil",
+    "gender":"Male"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type:application/json
+
+{
+    "username":"narendramodi",
+    "password":"narendramodi"
+    
+}
+
+###
+
+GET http://localhost:3000/user/tweets/feed
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5pa2hpbDEyMyIsImlhdCI6MTY1NzUzNTg5Nn0.MyZnK_dM_FjCQPnMmC8q_LGWD633DsU_v0LqhxgQXlU
+
+###
+
+GET http://localhost:3000/user/following/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5pa2hpbDEyMyIsImlhdCI6MTY1NzUzNTg5Nn0.MyZnK_dM_FjCQPnMmC8q_LGWD633DsU_v0LqhxgQXlU
+
+###
+
+GET http://localhost:3000/user/followers/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5pa2hpbDEyMyIsImlhdCI6MTY1NzUzNTg5Nn0.MyZnK_dM_FjCQPnMmC8q_LGWD633DsU_v0LqhxgQXlU
+
+###
+
+GET http://localhost:3000/tweets/1/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5pa2hpbDEyMyIsImlhdCI6MTY1NzUzNTg5Nn0.MyZnK_dM_FjCQPnMmC8q_LGWD633DsU_v0LqhxgQXlU
+
+###
+
+GET http://localhost:3000/tweets/1/likes
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5pa2hpbDEyMyIsImlhdCI6MTY1NzUzNTg5Nn0.MyZnK_dM_FjCQPnMmC8q_LGWD633DsU_v0LqhxgQXlU
+
+###
+
+GET http://localhost:3000/tweets/1/replies
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5pa2hpbDEyMyIsImlhdCI6MTY1NzUzNTg5Nn0.MyZnK_dM_FjCQPnMmC8q_LGWD633DsU_v0LqhxgQXlU
+
+###
+
+GET http://localhost:3000/user/tweets/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5pa2hpbDEyMyIsImlhdCI6MTY1NzUzNTg5Nn0.MyZnK_dM_FjCQPnMmC8q_LGWD633DsU_v0LqhxgQXlU
+
+###
+POST http://localhost:3000/user/tweets/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5pa2hpbDEyMyIsImlhdCI6MTY1NzUzNTg5Nn0.MyZnK_dM_FjCQPnMmC8q_LGWD633DsU_v0LqhxgQXlU
+Content-Type:application/json
+
+{
+    "tweet":"Hello World!"
+}
+
+###
+
+DELETE http://localhost:3000/tweets/1/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5pa2hpbDEyMyIsImlhdCI6MTY1NzUzNTg5Nn0.MyZnK_dM_FjCQPnMmC8q_LGWD633DsU_v0LqhxgQXlU
+
+
